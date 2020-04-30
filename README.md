@@ -4,7 +4,7 @@ Documentation is in progress...
 
 ```
 docker build -t hub-frontend-menu .
-docker run -d -p 8392:3000 hub-frontend-menu
+docker run --rm --name hub-frontend-menu -d -p 8392:3000 hub-frontend-menu
 ```
 
 ```
