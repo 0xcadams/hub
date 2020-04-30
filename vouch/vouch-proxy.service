@@ -1,0 +1,14 @@
+[Unit]
+Description=Vouch proxy service to auth using google oauth
+Wants=network.target
+After=network.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+ExecStart=/home/chase/go/src/github.com/vouch/vouch-proxy/vouch-proxy
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
