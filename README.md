@@ -3,8 +3,12 @@
 Documentation is in progress...
 
 ```
-docker build -t hub-frontend-menu .
-docker run --rm --name hub-frontend-menu -d -p 8392:3000 hub-frontend-menu
+docker build -t hub-frontend-menu frontend-menu/
+docker run --restart="always" --name hub-frontend-menu -d -p 8392:3000 hub-frontend-menu
+```
+
+```
+sudo docker run -d --name="private-bin" --restart="always" --read-only -p 8714:8080 -v privatebin-data:/srv/data/private-bin -v "$(pwd)"/private-bin/conf.php:/srv/cfg/conf.php:ro privatebin/nginx-fpm-alpine
 ```
 
 ```
