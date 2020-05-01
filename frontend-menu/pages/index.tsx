@@ -76,6 +76,24 @@ export default () => (
         </Col>
 
         <Col span={24} md={8}>
+          <a target="_blank" href="https://link.cadams.io">
+            <Card
+              hoverable
+              style={{ width: 240, marginLeft: "auto", marginRight: "auto" }}
+              cover={
+                <img
+                  style={{ height: 260, objectFit: "cover" }}
+                  alt="Kutt"
+                  src="https://kutt.it/images/card.png"
+                />
+              }
+            >
+              <Meta title="Link Shortener" description="link.cadams.io" />
+            </Card>
+          </a>
+        </Col>
+
+        <Col span={24} md={8}>
           <a target="_blank" href="https://code.cadams.io">
             <Card
               hoverable
