@@ -44,5 +44,5 @@ systemctl status vouch-proxy
 
 ```
 wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh | bash
-docker run --name pgadmin -p 51058:80 -e "PGADMIN_DEFAULT_EMAIL=c@cadams.io" -e "PGADMIN_DEFAULT_PASSWORD=***" -d dpage/pgadmin4
+docker run --name pgadmin --restart="always" -p 51058:80 -e "PGADMIN_DEFAULT_EMAIL=c@cadams.io" -e "PGADMIN_DEFAULT_PASSWORD=***" -d dpage/pgadmin4
 ```
